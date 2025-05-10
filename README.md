@@ -1,4 +1,5 @@
 This project contains Selenium automation scripts using Java and TestNG.
+
 Website automated: https://www.saucedemo.com/
 
 ## Features
