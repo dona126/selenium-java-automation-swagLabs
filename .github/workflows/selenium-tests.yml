@@ -15,7 +15,7 @@ jobs:
     steps:
       # Checkout code from repository
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       # Set up Java JDK
       - name: Set up JDK 11
@@ -39,7 +39,7 @@ jobs:
 
       # Upload test results to GitHub Actions
       - name: Upload test results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: test-results
           path: target/surefire-reports/
