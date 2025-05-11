@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.toLogin("invalid_user", "wrong_pass");
 
-        Assert.assertTrue(loginPage.isErrorMessageVisible(), "Error message not displayed for invalid credentials.");
+        Assert.assertTrue(loginPage.getErrorText().contains("Username and password do not match any user in this service"),  "Expected, error message for invalid credentials.");
     }
 
     @Test
@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.toLogin("", "");
 
-        Assert.assertTrue(loginPage.isErrorMessageVisible(), "Error message not displayed for empty credentials.");
+        Assert.assertTrue(loginPage.getErrorText().contains("Username is required"), "Expected,error message for empty credentials.");
     }
 
     @Test
@@ -38,7 +38,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.toLogin("locked_out_user", "secret_sauce");
 
-        Assert.assertTrue(loginPage.getErrorText().contains("locked out"), "Expected locked out user error.");
+        Assert.assertTrue(loginPage.getErrorText().contains("locked out"), "Expected, locked out user error.");
     }
 }
 

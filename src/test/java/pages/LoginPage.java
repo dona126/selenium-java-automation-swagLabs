@@ -41,14 +41,14 @@ public class LoginPage {
 
     }
 
-    public boolean isErrorMessageVisible() {
-        try {
-            WebElement errorMessageE = driver.findElement(errorMessage);
-            return errorMessageE.isDisplayed();
-        } catch (NoSuchElementException e) {
-            return false; // If error message is not found, consider it as no error
-        }
-    }
+//    public boolean isErrorMessageVisible() {
+//        try {
+//            WebElement errorMessageE = driver.findElement(errorMessage);
+//            return errorMessageE.isDisplayed();
+//        } catch (NoSuchElementException e) {
+//            return false; // If error message is not found, consider it as no error
+//        }
+//    }
 
     public String getErrorText() {
         try {
