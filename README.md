@@ -1,5 +1,4 @@
-This project is a complete Selenium WebDriver automation framework built in Java for testing [Swag Labs](https://www.saucedemo.com/), a demo e-commerce application by Sauce Labs. It follows best practices including Page Object Model (POM), TestNG, reusable utility classes, and integrates with CI tools.
-
+This project is a complete **Selenium WebDriver** automation framework built in **Java** for testing [**Swag Labs**](https://www.saucedemo.com/), a demo e-commerce site by Sauce Labs. It follows industry best practices including the **Page Object Model (POM)** design pattern, utilizes **TestNG** for test execution, and is integrated with **Maven** for build management and **CI/CD pipelines** for seamless automation workflows.
 
 ## Features
 - Automated test cases
@@ -12,4 +11,3 @@ This project is a complete Selenium WebDriver automation framework built in Java
 - Selenium
 - TestNG
 - Maven
-
