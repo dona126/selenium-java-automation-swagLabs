@@ -25,11 +25,9 @@ jobs:
           distribution: 'temurin'
 
       # Set up Maven
-      - name: Set up Maven
-        uses: actions/setup-java@v2
-        with:
-          maven-version: '3.8.1'
-
+      - name: Check Maven version
+        run: mvn -v
+      
       # Install dependencies
       - name: Install dependencies
         run: mvn clean install
