@@ -27,7 +27,7 @@ jobs:
       # Set up Maven
       - name: Check Maven version
         run: mvn -v
-      
+
       # Install dependencies
       - name: Install dependencies
         run: mvn clean install
